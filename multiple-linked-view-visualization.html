@@ -21,8 +21,10 @@
         <a href="spatial-view-visualization.html">Spatial View Visualization</a>
     </div>
 
-  <div>
-    <label for="attributeSelector">Select Attribute:</label>
+  <h3 class="badge" style="background-color: olive; width: 21%; margin-left: 39%;">Interactive Street Data Exploration</h3>
+
+  <div class="dropdown">
+    <label class="label-styles" for="attributeSelector">Select Attribute:</label>
     <select id="attributeSelector">
       <option value="SPEED">Speed</option>
       <option value="LENGTH">Length</option>
@@ -30,8 +32,10 @@
     </select>
   </div>
 
+  <div style="display: flex; justify-content: space-between; margin-top: 10%;">
   <div id="barChart"></div>
   <div id="scatterPlot"></div>
+  </div>
 
   <script>
     const data = [
